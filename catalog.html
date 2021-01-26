@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Каталог товаров</title>
+    </head>
+
+    <body>
+<header>
+          <!--Шапка сайта блок навигации и верхнее мменю-->
+          <section>
+            <div><a href="index.html"><img src='img/logo-technomart.png' width="108px" height="18px" alt="Логотип интернет-магазина ТЕХНОМАРТ"></a></div>
+              <p>Поиск:</p>
+                <a href="#">Закладки:0</a>
+                  <a href="#">Корзина</a>
+                    <a href="#">Оформить заказ</a>
+                <p>
+                  <h1>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
+                    <a href="tel:+78125550555">+7 (812) 555-05-55</a><br>
+                    г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                </p>
+                <p>Равшан Джамшутович</p>
+                <p>Мои заказы</p>
+                <p>Личный кабинет</p>
+          </section>
+            <!--Я основная навигация по сайту-->
+                <nav class='main-nav'>
+                  <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Компания</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Спецпредложения</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+              </nav>
+
+</header>
+<main>
+    <section>
+<ul>
+    <li><a href="#">Каталог</a></li>
+    <li><a href="#">Инструмент</a></li>
+    <li><a href="#">Перфораторы</a></li>
+</ul>
+
+<h2>ПЕРФОРАТОРЫ</h2>
+
+    </section>
+
+    <section>
+        <h3>Фильтр:</h3>
+            <form method="POST" action="https://echo.htmlacademy.ru/">
+                <fieldset>
+                    <legend>Цена:</legend>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Производители:</legend>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="BOSCH" id="filter-BOSCH" checked>
+                                    <label for="filter-BOSCH">BOSCH</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="Interskol" id="filter-interskol">
+                                    <label for="filter-interskol">ИНТЕРСКОЛ</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="Makita" id="filter-Makita" checked>
+                                    <label for="filter-Makita">MAKITA</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="DEWALT" id="filter-DEWALT">
+                                    <label for="filter-DEWALT">DEWALT</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" name="HITACHI" id="filter-HITACHI">
+                                    <label for="filter-HITACHI">HITACHI</label>
+                            </li>
+                        </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Питание:</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" name="charge" value="battary" id="filter-battary" checked>
+                                    <label for="filter-battary">АККАМУЛЯТОРНЫЕ</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="charge" value="cable" id="filter-cable">
+                                    <label for="filter-cable">СЕТЕВЫЕ</label>
+                            </li>
+                            </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Сортировка:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="sort" value="price" id="filter-price">
+                                <label for="filter-price">ПО ЦЕНЕ</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="sort" value="type" id="filter-type">
+                                <label for="filter-type">ПО ТИПУ</label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="sort" value="function" id="filter-function">
+                                <label for="filter-function">ПО ФУНКЦИОНАЛУ</label>
+                        </li>
+                    </ul>
+
+
+                </fieldset>
+                    
+                    <button type="submit">Показать</button>
+
+
+            </form>
+
+    </section>
+
+</main>
+<footer>
+
+</footer>
+    </body>
