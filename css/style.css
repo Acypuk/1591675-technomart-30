@@ -56,15 +56,20 @@ src: local("ptsans"),
   --Basic-green: #63A63E;
   --Succes: #5FBB2D;
   --Basic-red: #EE3643;
-  --Special-ylellow: #FFBF47;
+  --Special-yellow: #FFBF47;
   --Success: #5FBB2D;
   --Error: #BA2732;
-  --Grey-button: #A9A9A9;
+  --Button-Grey: #A9A9A9;
   --Button-red: #CA2C37;
   --Button-click: #BA2732;
   --Card:#3BBCE3;
   --Card1:#DC91D8;
+  --Card2: #8ED78F;
+  --Card3: #FFC047;
   --Grey-focus:#161D29;
+  --nav-hover: #293449;
+  --nav-focus: #1D2739;
+  --A-footer: #FFD180;
 
 }
   /* Основные кнопки */
@@ -188,10 +193,10 @@ h1 {
   color: var(--basic-white)
 }
 .main-nav-list a:hover {
-  background-color: #293449;
+  background-color: var(--nav-hover);
 }
 .main-nav-list a:focus {
-  background-color: #1D2739;
+  background-color: var(--nav-focus);
   opacity: 0.5;
 }
 
@@ -211,27 +216,27 @@ h1 {
   line-height: 18px;
 }
 .button-product:focus {
-  background: var(--Grey-button);
+  background: var(--Button-Grey);
 }
 .button-product:hover {
   background-color: var(--Basic-greylight);
   opacity: 0.3;
 }
 .group-products-cart:nth-child(1) {
-  background-color: var(--Special-ylellow);
+  background-color: var(--Special-yellow);
 
 }
 .group-products-cart:nth-child(2){
-  background-color: #3BBCE3;
+  background-color: var(--Card);
 }
 .group-products-cart:nth-child(3){
-  background-color: #DC91D8;
+  background-color: var(--Card1);
 }
 .group-products-cart:nth-child(4){
-  background-color: #8ED78F;
+  background-color: var(--Card2);
 }
 .group-products-cart:nth-child(5){
-  background-color: #FFC047;
+  background-color: var(--Card3);
 }
 
 .slider-main, h2 {
@@ -245,8 +250,8 @@ h1 {
   line-height: 24px;
 }
 .best-products-cart{
-  background: #FFFFFF;
-  border: 1px solid #EAEAEA;
+  background: var(--basic-white);
+  border: 1px solid;
 }
 .best-products h3 {
   text-transform: uppercase;
@@ -268,7 +273,7 @@ h1 {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  color: #A9A9A9;
+  color: var(--Button-Grey);
   ;
 }
 .price-button {
@@ -289,8 +294,8 @@ h1 {
   list-style: none;
 }
 .best-company-list-cart-img:hover {
-  background: #FFFFFF;
-  border: 1px solid #EAEAEA;
+  background: var(--basic-white);
+  border: 1px solid var(--basic-white);
 }
 .best-company-list-cart-img:focus {
   opacity: 0.5;
@@ -299,26 +304,26 @@ h1 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  color: var(--basic-black);
+  color: var(--Basic-grey);
 }
 .service-info h3 {
-  font-family: "cumprum", "Arial", sans-serif;
+  font-family: "cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
-  color: black;
+  color: var(--basic-black);
 }
 
 .service-info p {
   font-family: "ptsans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
-  color: black;
+  color: var(--basic-black);
 }
 
 .info-company h3 {
   font-size: 30px;
   line-height: 30px;
-  color: black;
+  color: var(--basic-black);
   text-transform: uppercase;
 
 }
@@ -359,7 +364,7 @@ h1 {
   font-family: "cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
-  color: #FFD180;
+  color: var(--A-footer);
 
 }
 
@@ -368,5 +373,8 @@ h1 {
 }
 
 .footer-contact  {
-  color: var(--Special-ylellow)
+  color: var(--Special-yellow)
+}
+.write-us {
+
 }
