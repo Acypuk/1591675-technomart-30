@@ -49,7 +49,7 @@ src: local("ptsans"),
 
 :root {
   --basic-white: #FFFFFF;
-  --basic-black: black;
+  --basic-black: #000000;
   --basic-background: #F1F5F7;
   --Basic-greylight: #C5C5C5;
   --Basic-grey: #32425C;
@@ -70,7 +70,9 @@ src: local("ptsans"),
   --nav-hover: #293449;
   --nav-focus: #1D2739;
   --A-footer: #FFD180;
-
+  --background-breadcr: #F2F6F8;
+  --h2-grey: #32425C;
+  --background-catalog:#F7F3EC;
 }
   /* Основные кнопки */
 
@@ -214,6 +216,12 @@ h1 {
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
+}
+.group-products h2 {
+  font-family: "cuprum", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
 }
 .button-product:focus {
   background: var(--Button-Grey);
@@ -377,4 +385,133 @@ h1 {
 }
 .write-us {
 
+}
+
+.main-container-search {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+.breadcrumbs {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  list-style: none;
+}
+.breadcrumbs a {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  list-style: none;
+}
+.main-container-search h2 {
+  font-family: "cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--h2-grey);
+  background: var(--background-breadcr);
+}
+.main-container-search h3 {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background: var(--background-catalog);
+}
+fieldset {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+fieldset legend {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+.filter {
+  list-style: none;
+}
+.filter label {
+  opacity: 0.3;
+  border-bottom: 1px dotted var(--Basic-red);
+}
+.filter label:hover {
+  opacity: 1.0;
+  border-bottom: 1px solid var(--Basic-red);
+}
+.filter label:active {
+  color: var(--Basic-red);
+  border-bottom: 0px;
+}
+.cart-product-list li p {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+.cart-product-list li p del {
+  font-family: "ptsans", "Arial", sans-serif;
+  color: var(--Button-Grey);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px
+}
+.cart-product-list li p span {
+  font-family: "ptsans", "Arial", sans-serif;
+  color: var(--basic-white);
+  font-size: 17px;
+  line-height: 18px;
+}
+.filter-product legend {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 30px;
+}
+.filter-product ul {
+  list-style: none;
+}
+.filter-product ul li {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+}
+.filter-nutrition legend {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 30px;
+}
+.filter-nutrition ul {
+  list-style: none;
+  font-family: "ptsans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+}
+.info-section {
+  background-color: var(--basic-background);
+}
+.info-section h3 {
+  font-family: "cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+.info-section p {
+  font-family: "ptsans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
