@@ -449,6 +449,8 @@ h1 {
   line-height: 30px;
   color: var(--h2-grey);
   background: var(--background-breadcr);
+  width: 940px;
+  height: 89px;
 }
 .main-container-search h3 {
   font-family: "ptsans", "Arial", sans-serif;
@@ -457,6 +459,8 @@ h1 {
   font-weight: 400;
   color: var(--basic-black);
   background: var(--background-catalog);
+  width: 220px;
+  height: 38px;
 }
 fieldset {
   font-family: "ptsans", "Arial", sans-serif;
@@ -614,3 +618,40 @@ fieldset legend {
     margin: 0 auto;
     margin-bottom: 70px;
   }
+/* GRID CATALOG */
+.main-container-search {
+  margin: 0 auto;
+  width: 940px;
+  margin-bottom: 60px;
+}
+
+.form-container {
+display: grid;
+grid-template-columns: 220px 1fr;
+}
+.form-container h2 {
+  grid-column: 1/-1;
+}
+.filter-sorting {
+  width: 700px;
+  height: 38px;
+}
+.cart-product-list {
+  grid-column: 2/3;
+  grid-row: 3/6;
+}
+.cart-product-list {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: 220px 220px 220px;
+  grid-template-rows: 318px 318px 318px;
+  gap: 20px;
+  list-style: none;
+  margin-left: 20px;
+
+}
+.info-section {
+  width: 940px;
+  margin: 0 auto;
+}
