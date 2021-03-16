@@ -76,6 +76,8 @@ src: local("ptsans"),
   --background-container: #F9F5F0;
   --box-shadow: #293449;
   --button-background: rgba(255,255,255,0.3);
+  --button-inline: #367315;
+
 
 }
   /* Основные кнопки */
@@ -185,7 +187,7 @@ img {
 
 }
 .main-header-menu-search {
-
+  position: relative;
   height: 42px;
   width: 241px;
   margin: 0;
@@ -196,12 +198,17 @@ img {
   line-height: 24px;
   border: 0;
   font-family: "cuprum", "Arial", sans-serif;
-
 }
-
+.main-header-menu-serch>label {
+  position: absolute;
 }
-
-
+.search-position {
+  width: 190px;
+  height: 42px;
+  background-color: var(--Basic-grey);
+  padding: 0;
+  border: 0;
+  color: var(--basic-white);
 }
 .main-header-menu-bookmarks {
   position: relative;
@@ -422,7 +429,7 @@ h1 {
   line-height: 30px;
 }
 
-}
+
 .button-product, .new-line {
   font-style: normal;
   font-size: 14px;
@@ -492,9 +499,49 @@ h1 {
   line-height: 24px;
 }
 .best-products-cart{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  width: 220px;
+  height: 318px;
   background: var(--basic-white);
-  border: 1px solid;
+  border: 1px solid rgba(234,234,234,1);
 }
+.button-product-cart-buy {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 135px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  border-radius: 2px;
+  background-color: var(--Basic-green);
+  box-shadow: inset 0px -3px 0px var(--button-inline);
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "cuprum", "Arial", sans-serif;
+  text-decoration: none;
+
+}
+
+
+.button-product-cart-buy:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-image: url(../img/icon/icon-cart-cart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 30px;
+  top: 10px;
+}
+
+
 .best-products h3 {
   text-transform: uppercase;
   font-size: 30px;
@@ -681,7 +728,7 @@ a, .main-footer-container {
   fill: var(--Basic-red)
 }
 .footer-contact  {
-  color: var(--Special-yellow)
+  color: var(--A-footer)
 }
 .write-us {
 
