@@ -232,7 +232,7 @@ img {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
-.form-input:focus .icon-color {
+.form-input:focus:active .icon-color {
   fill: var(--Basic-red);
 }
 .main-header-menu-bookmarks {
@@ -559,13 +559,10 @@ h1 {
   top: 10px;
 }
 
+.best-products {
 
-.best-products h3 {
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 30px;
-  color: var(--Basic-grey);
 }
+
 .best-products-list{
   list-style: none;
 }
@@ -592,11 +589,7 @@ h1 {
 
 }
 
-.best-company h3 {
-  font-size: 30px;
-  line-height: 30px;
-  color: var(--Basic-grey)
-}
+
 .best-company-list {
   list-style: none;
 }
@@ -635,19 +628,27 @@ h1 {
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
 
 }
+
 .info-company p {
   font-family: "ptsans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
-
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
 }
+
 
 .info-company-list {
   font-size: 18px;
   line-height: 24px;
-
+  margin: 0;
+  padding: 0;
 }
 
 .main-footer {
@@ -931,7 +932,7 @@ fieldset legend {
 }
 .best-products {
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   width: 940px;
   height: 427px;
   }
@@ -941,6 +942,7 @@ fieldset legend {
     align-content: center;
     background-color: var(--background-container);
     margin-bottom: 20px;
+    height: 89px;
   }
 .best-products-list {
   display: grid;
@@ -954,6 +956,12 @@ fieldset legend {
   margin-top: 25px;
 }
 .best-container h3 {
+  font-family: "cuprum", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--Basic-grey);
+  text-transform: uppercase;
   margin-left: 28px;
 }
 .best-company {
@@ -975,11 +983,20 @@ fieldset legend {
   height: 522px;
   margin: 0 auto;
   margin-bottom: 70px;
+  background-color: var(--basic-background);
   }
-
+.service-info h3 {
+  font-family: "cuprum", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  margin-top: 63px;
+}
   .info-company {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 640px 300px;
     width: 940px;
     height: 356px;
     margin: 0 auto;
