@@ -77,6 +77,9 @@ src: local("ptsans"),
   --box-shadow: #293449;
   --button-background: rgba(255,255,255,0.3);
   --button-inline: #367315;
+  --background-user-info: ;
+  ;
+  ;
 
 
 }
@@ -391,7 +394,77 @@ h1 {
 .button-header:focus{
   color: var(--Basic-greylight)
 }
+.user-info-window {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 299px;
+  height: 70px;
+}
+.user-info-window-top {
+  position: relative;
+  width: 299px;
+  height: 45px;
+  background-color: var(--basic-white);
+}
+.user-info-window-top a {
+  display: block;
+}
+.login-info {
+  padding-top: 12px;
+}
+.icon-user {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+}
+.icon-logout {
+  position: absolute;
+  left: 262px;
+  top: 14px;
+}
+.user-info-window-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 210px;
+  height: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-left: 42px;
+}
+.user-info-window a  {
+  text-align: center;
 
+  font-family: "cuprum", "Arial", sans-serif;
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+}
+.user-info-window-bottom a {
+  font-family: "cuprum", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--Basic-grey);
+  text-decoration: none;
+}
+.user-info-window-bottom a:hover {
+  color: var(--Basic-red);
+}
+.icon-user:hover path,
+.icon-logout:hover path {
+  fill: var(--Basic-grey);
+}
+.icon-user:active path,
+.icon-logout:active path,
+.user-info-window-bottom a:active {
+  fill: var(--Basic-greylight);
+  color: var(--Basic-greylight);
+}
 /* ШАПКА ВЕРХНИЙ БЛОК */
 
 /* ШАПКА ОСНОВНАЯ НАВИГАЦИЯ */
