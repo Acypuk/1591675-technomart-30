@@ -465,6 +465,9 @@ h1 {
   fill: var(--Basic-greylight);
   color: var(--Basic-greylight);
 }
+.header-catalog {
+  margin-bottom: 21px;
+}
 /* ШАПКА ВЕРХНИЙ БЛОК */
 
 /* ШАПКА ОСНОВНАЯ НАВИГАЦИЯ */
@@ -594,10 +597,14 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
+  text-align: center;
   width: 220px;
   height: 318px;
   background: var(--basic-white);
   border: 1px solid rgba(234,234,234,1);
+}
+.red-button-price {
+  background-image: url(../img/icon/red-button.svg);
 }
 .button-product-cart-buy {
   position: relative;
@@ -658,7 +665,9 @@ h1 {
   font-size: 17px;
   line-height: 18px;
   color: var(--basic-white);
-  background-image: url(../img/red-button.png);
+  background-image: url(../img/icon/red-button.svg);
+  width: 141px;
+  height: 38px;
 
 }
 
@@ -847,18 +856,27 @@ a, .main-footer-container {
 }
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font-family: "ptsans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
   list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 463px;
+  height: 18px;
+  margin-bottom: 20px;
 }
 .breadcrumbs a {
   font-family: "ptsans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
-  list-style: none;
+  text-decoration: none;
+}
+
 }
 .breadcrumbs-list {
   display: flex;
@@ -1083,11 +1101,26 @@ fieldset legend {
 }
 
 .form-container {
-display: grid;
-grid-template-columns: 220px 1fr;
+  display: grid;
+  grid-template-columns: 220px 1fr;
 }
 .form-container h2 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: start;
   grid-column: 1/-1;
+  margin: 0;
+  padding: 0;
+  width: 940px;
+  height: 89px;
+
+}
+.form-container h3 {
+  display: flex;
+  align-items: center;
+
+  text-align: center;
 }
 .filter-sorting {
   display: flex;
